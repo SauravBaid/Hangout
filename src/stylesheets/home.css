@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* padding: 30px; */
+}
+
+.landingImage{
+  height: 90vh;
+  clip-path: polygon(50% 0, 100% 0,100% 100%, 65% 100%);
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.heading{
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+}
+.title{
+    text-transform: uppercase;  
+}
+/* Landing Page */
+.container{
+    position: relative;
+    text-align: center;
+    /* background: palevioletred; */
+}
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 30%;
+    text-align: left;
+    animation: appear 0.8s ease-out ;
+}
+.centeredSubtitle{
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.centeredTitle{
+    margin-top: 0;
+    font-size:40px;
+    border-left: 3px solid pink; 
+    margin-bottom: 20px;
+    padding-left: 5px;
+    backface-visibility: hidden;
+}
+.centeredContent{
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 20px;
+    display: block;
+}
+.btn{
+  padding: 7px;
+  /* width: 25%; */
+  border:2px solid goldenrod;
+  border-radius: 5px;
+  background-color: white;
+  color:black;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 20px; 
+}
+.btn:hover{
+  cursor: pointer;
+  color:white;
+  background-color: goldenrod;
+  transform: translateY(-2px);
+  box-shadow: 1px 3px 10px rgba(0,0,0,0.8 ); 
+  transition: all 0.3s;
+}
+/* Card CSS */
+.cardContainer{
+  position: relative;
+  /* background-color: whitesmoke; */
+  box-sizing: border-box;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  padding: 100px;
+}
+.card{
+  display: flex;
+  margin-bottom: 50px;
+  align-content: space-between;
+}
+/*.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 40px; 
+  backface-visibility: hidden; 
+}
+.cardTitle{
+  font-size: 24px;
+  font-weight: 500;
+}
+.cardImage{
+  width: 100%;
+} */
+.flip-card {
+  background-color: transparent;
+  width: 30.3%;
+  height: 300px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; 
+  display: inline-block;
+  padding-left:70px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+  padding: 20px;
+  height: 50%;
+  box-shadow: 3px 5px 10px rgba(0,0,0,0.8 ); 
+}
+.caption{
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  font-size: 26px;
+  text-align: center;
+  right: 120px;
+}

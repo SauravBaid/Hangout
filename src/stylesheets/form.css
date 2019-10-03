@@ -1,0 +1,51 @@
+input{
+    padding: 10px;
+    display: block;
+    position: relative;
+    outline: 0;
+    border: 1px solid lightgray;
+    border-radius: 4px; 
+    box-shadow: 0 2px 0 0 #e5e5e5;
+    transition: box-shadow 150ms ease-out;
+    margin-bottom: 12px;
+    width: 90%;
+}
+.placeholder{
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+input:focus {
+    box-shadow: 0 2px 0 0 rgb(81, 77, 196);
+}
+.btn-wrapper{
+    position: relative;
+}
+input[type = "radio"]{
+    margin-right: 10px;
+    border: none;
+    display: inline-block;
+    width: 10%;
+    box-shadow: none;
+    cursor: pointer;
+    width: 16px;
+    height: 18px;
+}
+input[type = "radio"]:checked{
+    background-color: blue;
+}
+input[type = "radio"]:hover{
+    background-color: #eee;
+    transform: translateX(-2px);
+}
+input[type="checkbox"]{
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    display: inline-block;
+    width: 10%;
+    box-shadow: none;
+    cursor: pointer;
+    width: 16px;
+    height: 18px;
+}
