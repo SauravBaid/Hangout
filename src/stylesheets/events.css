@@ -1,6 +1,10 @@
+.events{
+    margin-left: 270px;
+}
 .event{
     display: inline-block;
-    width:30%;
+    width:25%;
+    height: 400px;
     border:2px solid blueviolet;
     box-shadow: 1px 3px 4px rgba(0,0,0,0.4);
     margin-left: 40px;
@@ -15,6 +19,7 @@
     margin-bottom: 20px;  
 }
 .events img{
+    height: 50%;
     width: 100%;
 }
 .event-small{

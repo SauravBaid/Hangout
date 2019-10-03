@@ -7,8 +7,8 @@ export default class events extends Component {
         return (
             <div>
                 <Navbar />
+                <h2 className="title events-heading">Events Around you</h2>
                 <div className="events">
-                    <h2 className="title events-heading">Events Around you</h2>
                     <div className="event">
                         <img src="hashImage.jpg" alt="Event Theme"/>
                         <div className="card-content">
@@ -17,8 +17,7 @@ export default class events extends Component {
                             <span style={{display:"block",marginBottom:"10px"}}>Location: <span className="event-small" style={{'fontSize':'16px'}}>Chennai Rooftop</span></span>
                             <span style={{color:'rgba(10,10,10)'}}>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Excepturi magnam reiciendis minima fugiat nam qui, veniam laborum, consequatur aliquam commodi voluptatum doloribus, quia eos. 
-                                Sit nam mollitia harum aliquam libero?
+                                Excepturi magnam reiciendis minima fugiat nam qui, veniam laborum.
                             </span>
                         </div>
                     </div>
@@ -30,8 +29,7 @@ export default class events extends Component {
                             <span style={{display:"block",marginBottom:"10px"}}>Location: <span className="event-small" style={{'fontSize':'16px'}}>Chennai Rooftop</span></span>
                             <span style={{color:'rgba(10,10,10)'}}>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Excepturi magnam reiciendis minima fugiat nam qui, veniam laborum, consequatur aliquam commodi voluptatum doloribus, quia eos. 
-                                Sit nam mollitia harum aliquam libero?
+                                Excepturi magnam reiciendis minima fugiat nam qui, veniam laborum.
                             </span>
                         </div>
                     </div>
@@ -43,8 +41,7 @@ export default class events extends Component {
                             <span style={{display:"block",marginBottom:"10px"}}>Location: <span className="event-small" style={{'fontSize':'16px'}}>Chennai Rooftop</span></span>
                             <span style={{color:'rgba(10,10,10)'}}>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Excepturi magnam reiciendis minima fugiat nam qui, veniam laborum, consequatur aliquam commodi voluptatum doloribus, quia eos. 
-                                Sit nam mollitia harum aliquam libero?
+                                Excepturi magnam reiciendis minima fugiat nam qui.
                             </span>
                         </div>
                     </div>
